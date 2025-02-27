@@ -1,8 +1,22 @@
-# React + Vite
+# RFID – Based library Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Group 13 - Cyber Punks
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The RFID-Based Library Management System is designed to streamline book check-in and check-out process in a library using RC522 RFID readers and a PC-based management system. This system automates the identification of books and library members, reducing effort and improving efficiency.
+
+## Hardware Components
+
+| **Component**         | **Description**                                                       |
+|-----------------------|-----------------------------------------------------------------------|
+| **RC522 RFID Reader** | Scans RFID tags attached to the books and library cards.              |
+| **RFID Tags**         | Attach to the books and library cards for identification.             |
+| **ESP32 Microcontroller**   | Processes signals from the RFID reader and communicates with the PC.  |
+| **Personal Computer** | Runs the software and stores the database.                            |
+| **Power Supply**      | Provides necessary power to the system components.                    |
+
+## Software Components
+
+🔹 Arduino IDE – Used for ESP32 programming <br />
+🔹 Firebase Realtime Database – Stores and syncs sensor data and the Web Application
