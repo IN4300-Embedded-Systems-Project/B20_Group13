@@ -86,9 +86,9 @@ function Users() {
             </form>
 
             {/* Users List */}
-            <div className="grid grid-cols-1 gap-4">
+            <div className="grid grid-cols-4 gap-4">
                 {users.map((user) => (
-                    <div key={user.id} className="border p-4 rounded">
+                    <div key={user.id} className="p-4 border rounded">
                         <h3 className="text-xl font-bold">{user.name}</h3>
                         <p>Email: {user.email}</p>
                         <p>Role: {user.role}</p>

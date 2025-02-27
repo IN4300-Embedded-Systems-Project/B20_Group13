@@ -102,9 +102,9 @@ function Books() {
             </form>
 
             {/* Books List */}
-            <div className="grid grid-cols-1 gap-4">
+            <div className="grid grid-cols-4 gap-4">
                 {books.map((book) => (
-                    <div key={book.id} className="border p-4 rounded">
+                    <div key={book.id} className="p-4 border rounded">
                         <h3 className="text-xl font-bold">{book.title}</h3>
                         <p>ISBN: {book.isbn}</p>
                         <p>Author: {book.author}</p>
@@ -112,7 +112,7 @@ function Books() {
                         <p>Publication Date: {book.publicationDate}</p>
                         <button
                             onClick={() => handleDelete(book.id)}
-                            className="bg-red-500 text-white px-4 py-2 rounded mt-2"
+                            className="px-4 py-2 mt-2 text-white bg-red-500 rounded"
                         >
                             Delete
                         </button>
